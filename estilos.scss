@@ -1,0 +1,256 @@
+
+$colorDos: black;
+$colorUno:  white;
+$tamañoUno: 1100px;
+$tamañoDos: 100px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    color: $colorUno;
+    }
+  
+  .navegacion {
+    width: ($tamañoUno) - ($tamañoDos);
+    margin: auto;
+    background: $colorDos;
+  
+    ul {
+      list-style: none;
+    }
+  }
+  
+  .menu {
+    > li {
+      position: relative;
+      display: inline-block;
+  
+      > a {
+        display: inline-block;
+        padding: 15px 20px;
+        color: $colorUno;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+      }
+    }
+  
+    li a:hover {
+      color: #CE7D35;
+    }
+  }
+  
+  .parrafoPrincipal__p--estilosParrafo {
+    border-radius: 10px;
+    background-color: $colorUno;
+    text-align: center;
+    color: $colorDos;
+    font-size: 20px;
+    transform: scale(0.9);
+  }
+  
+  tr {
+    color: darkmagenta;
+    text-align: center;
+  }
+  
+  body {
+    background-color: lightblue;
+    background-image: url(https://www.comercialtrevino.com/wp-content/uploads/elementor/thumbs/venta-productos-limpieza-y-beneficios-pdel9bg5ogodtt4vmg0ru487qjwxw7gqayoxwevxc8.png);
+  }
+  
+  strong {
+    color: $colorDos;
+  }
+  
+  footer {
+    border-radius: 10px;
+    background-color: $colorUno;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  .section--parrafoUbicacion__textoUbi {
+    font-size: 20px;
+    text-align: center;
+    color: $colorDos;
+    padding: 10px;
+    border: 10px solid white;
+    border-radius: 15px;
+    border-width: 5px;
+   
+  }
+  
+  .section__parrafo--estilosTexto {
+    text-align: left;
+    color: blue;
+    font-size: 24px;
+  }
+  
+  .mapa {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  table {
+    border: 5px solid rebeccapurple;
+    margin: auto;
+  }
+  
+  .imagenIndex, .videoLavandina {
+    height: 350px;
+    width: 400px;
+    display: block;
+    margin: auto;
+  }
+  
+  .submenu {
+    position: absolute;
+    background: #333333;
+    width: 120px;
+    display: none;
+  
+    li a {
+      display: block;
+      padding: 15px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+  }
+  
+  .menu li:hover .submenu {
+    display: block;
+  }
+  
+  .p__div--nuestrosProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+  
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border: solid 1px black;
+    }
+  }
+  
+  .item3 {
+    grid-column-start: span 2;
+  }
+  
+  .item2 {
+    grid-row-start: span 3;
+  }
+  
+  .item1 {
+    grid-column-end: span 4;
+  }
+  
+  .section__parrafo--textoNuestrosProd {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    animation-name: efecto;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
+  }
+  
+  .section__h4--estilosFormulario {
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  
+    h4 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .section__input--camposFormulario {
+    width: 100px;
+    background-color: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  
+  .botonEnviar {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  
+  .nuestrasredes--iconos__fuente {
+    font-size: 36px;
+  }
+  
+  .iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.sec {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  @media (min-width: 768px) {
+    body {
+      background-color: #24303c;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      background-color: bisque;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+      background-color: cornflowerblue;
+    }
+  }
+  
+  @keyframes efecto {
+    0% {
+      width: 100px;
+    }
+  
+    100% {
+      width: 500px;
+      background-color: white;
+    }
+  }
+  
+  /*# sourceMappingURL=estilos.css.map */
