@@ -11,7 +11,9 @@ $tamañoDos: 100px;
   }
   
   h1 {
-    color: $colorUno;
+    
+    color: $colorDos;
+    text-align: center;
     }
   
   .navegacion {
@@ -43,13 +45,9 @@ $tamañoDos: 100px;
     }
   }
   
-  .parrafoPrincipal__p--estilosParrafo {
-    border-radius: 10px;
-    background-color: $colorUno;
-    text-align: center;
-    color: $colorDos;
-    font-size: 20px;
-    transform: scale(0.9);
+  .carrusel{
+    border: 1px solid black;
+    background-color: gray;
   }
   
   tr {
@@ -104,7 +102,7 @@ $tamañoDos: 100px;
     margin: auto;
   }
   
-  .imagenIndex, .videoLavandina {
+  .videoLavandina {
     height: 350px;
     width: 400px;
     display: block;
@@ -132,43 +130,34 @@ $tamañoDos: 100px;
   
   .p__div--nuestrosProductos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 3fr);
     grid-auto-rows: 150px;
     padding: 20px;
-    grid-gap: 10px;
+    
   
     > img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      border: solid 1px black;
+      object-fit: cover;
+      border: solid 1px $colorDos;
     }
   }
   
   .item3 {
-    grid-column-start: span 2;
+    grid-column-start: span 3;
   }
   
   .item2 {
-    grid-row-start: span 3;
+    grid-row-start: span 2;
   }
   
   .item1 {
-    grid-column-end: span 4;
+    grid-column: span 4;
+  }
+  .item4 {
+    grid-column: span 4;
   }
   
-  .section__parrafo--textoNuestrosProd {
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    animation-name: efecto;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in;
-    animation-duration: 3s;
-    animation-delay: 0s;
-  }
   
   .section__h4--estilosFormulario {
     width: 400px;
